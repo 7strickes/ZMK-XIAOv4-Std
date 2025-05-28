@@ -24,6 +24,7 @@
 &kp Z  &kp X  &kp C  &kp V      &kp B             &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH
               &kp A  &kp SPACE  &kp DEL           &kp DEL  &kp RET &kp B
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_1 {
@@ -34,6 +35,7 @@
 &trans          &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
                               &trans        &trans        &bootloader     &trans  &trans  &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_2 {
@@ -44,6 +46,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &bootloader  &trans  &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_3 {
@@ -54,6 +57,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans       &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &mkp MB1     &mkp MB2  &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
