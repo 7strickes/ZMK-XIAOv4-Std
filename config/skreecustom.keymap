@@ -50,6 +50,13 @@
             >;
         };
     };
+    layer_state {
+        bindings = <
+            &rgb_ug_sethsv 0   255 255   // Layer 0 (Base) = Red
+            &rgb_ug_sethsv 85  255 255   // Layer 1 (FN) = Green
+            &rgb_ug_sethsv 170 255 255   // Layer 2 (Media) = Blue
+        >;
+    };
 };
 
 // //right hand trackball overrides
