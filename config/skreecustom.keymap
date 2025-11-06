@@ -14,20 +14,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        rabble {
-            bindings = <&rgb_ug RGB_COLOR_HSB(129,100,47)>;
-            key-positions = <55>;
-        };
-
-        rgb2 {
-            bindings = <&rgb_ug RGB_COLOR_HSB(242,100,49)>;
-            key-positions = <56>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,26 +49,5 @@
                                                                         &trans           &trans    &trans       &trans
             >;
         };
-    };
-
-    /* ---- RGB Layer Color Behavior ---- */
-    behaviors {
-        behavior_layer_rgb: behavior_layer_rgb {
-            compatible = "zmk,behavior-macro";
-            label = "LAYER_RGB";
-            #binding-cells = <1>;
-            bindings = <
-                &macro_press &led_strip RGB_COLOR_HSB(200,100,50)
-                &macro_release &led_strip RGB_COLOR_HSB(0,0,100)
-            >;
-        };
-    };
-
-    /* ---- Attach behavior to layer events ---- */
-    on_layer_state {
-        bindings = <
-            /* Trigger behavior when Layer 1 toggles */
-            &on_layer_state 1 0 &behavior_layer_rgb
-        >;
     };
 };
