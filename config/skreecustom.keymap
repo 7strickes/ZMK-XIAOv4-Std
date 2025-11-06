@@ -72,8 +72,8 @@
             label = "LAYER_RGB";
             #binding-cells = <1>;
             bindings = <
-                &macro_press &rgb_underglow RGB_COLOR_HSB(200,100,50)
-                &macro_release &rgb_underglow RGB_COLOR_HSB(0,0,100)
+                &macro_press &led_strip RGB_COLOR_HSB(200,100,50)
+                &macro_release &led_strip RGB_COLOR_HSB(0,0,100)
             >;
         };
     };
