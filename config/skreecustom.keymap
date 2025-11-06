@@ -72,10 +72,8 @@
             label = "LAYER_RGB";
             #binding-cells = <1>;
             bindings = <
-                /* When layer activates: change RGB color (Hue 200, Sat 255, Bright 128) */
-                &macro_press &rgb_ug_sethsv 200 255 128
-                /* When layer deactivates: restore base color (Hue 0, Sat 0, Bright 255 -> white) */
-                &macro_release &rgb_ug_sethsv 0 0 255
+                &macro_press &rgb_underglow RGB_COLOR_HSB(200,100,50)
+                &macro_release &rgb_underglow RGB_COLOR_HSB(0,0,100)
             >;
         };
     };
