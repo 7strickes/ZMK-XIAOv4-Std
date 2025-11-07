@@ -52,6 +52,4 @@ config ZMK_RGB_UNDERGLOW
 config ZMK_RGB_UNDERGLOW_ON_START
     default y
 
-config ZMK_RGB_UNDERGLOW_LAYERS
-    bool
-    default y
+CONFIG_ZMK_RGB_UNDERGLOW_LAYERS=y
