@@ -15,7 +15,7 @@
 
 / {
     behaviors {
-        layer0_color: new_macro {
+        layer0_color: 1_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &rgb_ug_sethsv 0 100 50 >;  // Red for default layer
@@ -23,7 +23,7 @@
             tap-ms = <0>;
         };
     
-        layer1_color: new_macro {
+        layer1_color: 2_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &rgb_ug_sethsv 140 100 50 >; // Green for layer 1
@@ -31,7 +31,7 @@
             tap-ms = <0>;
         };
     
-        layer2_color: new_macro {
+        layer2_color: 3_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &rgb_ug_sethsv 300 100 50 >; // Purple for layer 2
