@@ -18,9 +18,9 @@
         compatible = "zmk,layer-state";
         color-mapping = <&led_strip>;   /* must match your overlay node */
         layers = <
-            RGB_COLOR_HSV(128, 100, 100)   /* default_layer */
-            RGB_COLOR_HSV(300, 100, 50)    /* layer_1 */
-            RGB_COLOR_HSV(60, 100, 100)    /* layer_2 */
+            RGB_COLOR_HSB(128, 100, 100)   /* default_layer */
+            RGB_COLOR_HSB(300, 100, 50)    /* layer_1 */
+            RGB_COLOR_HSB(60, 100, 100)    /* layer_2 */
         >;
     };
 
