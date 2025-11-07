@@ -28,13 +28,6 @@
         };
     };
 
-    behaviors {
-        rgb_ug_sethsv: rgb_ug_sethsv {
-            compatible = "zmk,behavior-rgb-underglow-hsv";
-            label = "RGB_UG_SETHSV";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -70,14 +63,6 @@
                                                                         &trans           &trans    &trans       &trans
             >;
         };
-    };
-
-    layer_state {
-        bindings = <
-            &rgb_ug_sethsv 302 97  49  // Layer 0 - pink
-            &rgb_ug_sethsv 129 100 47   // Layer 1 - green
-            &rgb_ug_sethsv 140 100 48   // Layer 2 - blue
-        >;
     };
 };
 
