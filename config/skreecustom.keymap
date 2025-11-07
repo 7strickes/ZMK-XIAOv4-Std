@@ -74,9 +74,9 @@
 
     layer_state {
         bindings = <
-            &rgb_ug_sethsv 302 97  49  // Layer 0 - Red
+            &rgb_ug_sethsv 302 97  49  // Layer 0 - pink
             &rgb_ug_sethsv 129 100 47   // Layer 1 - green
-            &rgb_ug_sethsv 140 100 48   // Layer 1 - blue
+            &rgb_ug_sethsv 140 100 48   // Layer 2 - blue
         >;
     };
 };
