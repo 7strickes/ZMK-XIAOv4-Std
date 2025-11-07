@@ -14,20 +14,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        rabble {
-            bindings = <&rgb_ug RGB_COLOR_HSB(129,100,47)>;
-            key-positions = <55>;
-        };
-
-        rgb2 {
-            bindings = <&rgb_ug RGB_COLOR_HSB(242,100,49)>;
-            key-positions = <56>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
