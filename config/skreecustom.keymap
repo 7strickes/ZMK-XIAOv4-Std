@@ -27,6 +27,15 @@
             key-positions = <56>;
         };
     };
+    layer_state {
+        compatible = "zmk,layer-state";
+        color-mapping = <&led_strip>;  // the same device you assigned in chosen { zmk,underglow = &led_strip; }
+        layers = <
+            RGB_COLOR_HSV(128, 100, 100)   /* Layer 0: teal */
+            RGB_COLOR_HSV(300, 100, 50)    /* Layer 1: magenta */
+            RGB_COLOR_HSV(60, 100, 100)    /* Layer 2: yellow */
+        >;
+    };
 
     keymap {
         compatible = "zmk,keymap";
