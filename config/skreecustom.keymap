@@ -28,6 +28,13 @@
         };
     };
 
+    behaviors {
+        rgb_ug_sethsv: rgb_ug_sethsv {
+            compatible = "zmk,behavior-rgb-underglow-hsv";
+            label = "RGB_UG_SETHSV";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
