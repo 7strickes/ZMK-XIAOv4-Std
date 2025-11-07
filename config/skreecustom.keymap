@@ -18,23 +18,23 @@
         layer0_color: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = < &rgb_ug_sethsv 0 100 50 >;   /* Default layer red */
+            bindings = < &rgb_ug_sethsv 0 100 50 >;  // Red for default layer
             wait-ms = <0>;
             tap-ms = <0>;
         };
-
+    
         layer1_color: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = < &rgb_ug_sethsv 140 100 48 >; /* Layer 1 teal */
+            bindings = < &rgb_ug_sethsv 140 100 50 >; // Green for layer 1
             wait-ms = <0>;
             tap-ms = <0>;
         };
-
+    
         layer2_color: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = < &rgb_ug_sethsv 302 97 49 >;  /* Layer 2 pink */
+            bindings = < &rgb_ug_sethsv 300 100 50 >; // Purple for layer 2
             wait-ms = <0>;
             tap-ms = <0>;
         };
