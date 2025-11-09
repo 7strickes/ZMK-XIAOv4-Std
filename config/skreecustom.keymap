@@ -14,6 +14,18 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    behaviors {
+        layer_rgb_tog: layer_rgb_tog {
+            compatible = "zmk,behavior-macro";
+            label = "LAYER_RGB_TOG";
+            #binding-cells = <0>;
+            bindings = <
+                &tog 1
+                &rgb_ug RGB_COLOR_HSB(183,94,51)
+            >;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
