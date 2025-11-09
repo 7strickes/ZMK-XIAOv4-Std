@@ -29,9 +29,9 @@
             bindings = <&tog 1 &home_color>;
         };
 
-        rgb2layer: rgb2layer {
+        rgb3layer: rgb3layer {
             compatible = "zmk,behavior-macro";
-            label = "RGB2LAYER";
+            label = "RGB3LAYER";
             #binding-cells = <0>;
             bindings = <&mo 2 &rgb_ug RGB_COLOR_HSB(122,100,48) &kp>;
             bindings-release = <
