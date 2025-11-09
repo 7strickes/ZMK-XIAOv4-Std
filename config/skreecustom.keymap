@@ -14,38 +14,11 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        layer0_color: 1_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = < &rgb_ug_sethsv 0 100 50 >;  // Red for default layer
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-    
-        layer1_color: 2_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = < &rgb_ug_sethsv 140 100 50 >; // Green for layer 1
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-    
-        layer2_color: 3_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = < &rgb_ug_sethsv 300 100 50 >; // Purple for layer 2
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &layer0_color            /* Set default layer color first */
                 &kp ESC    &kp N1  &kp N2  &kp N3     &kp N4     &kp N5      &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
                 &kp TAB    &kp Q   &kp W   &kp E      &kp R      &kp T       &kp Y    &kp U     &kp I      &kp O    &kp P     &kp MINUS
                 &kp CAPS   &kp A   &kp S   &kp D      &kp F      &kp G       &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
@@ -57,7 +30,6 @@
 
         layer_1 {
             bindings = <
-                &layer1_color             /* Set layer 1 color first */
                 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans          &trans    &trans            &trans             &trans   &trans
                 &trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5     &kp F6          &kp F7    &kp F8            &kp F9             &kp F10  &trans
                 &trans      &trans        &trans        &trans        &kp F12       &kp F11    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW      &kp RIGHT          &trans   &trans
@@ -69,7 +41,6 @@
 
         layer_2 {
             bindings = <
-                &layer2_color             /* Set layer 2 color first */
                 &trans  &kp C_SLEEP                       &trans        &trans          &trans           &trans    &trans       &trans                &trans                &trans             &trans             &trans
                 &trans  &trans                            &trans        &trans          &bl BL_TOG       &trans    &trans       &kp C_MUTE            &kp C_NEXT            &kp C_PREV         &trans             &trans
                 &trans  &msc SCRL_LEFT                    &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans       &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_UP    &kp C_VOLUME_DOWN  &trans
