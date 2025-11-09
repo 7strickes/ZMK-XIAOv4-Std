@@ -35,19 +35,6 @@
             bindings = <&rgb_ug RGB_COLOR_HSB(309,100,50)>;
             label = "HOME_COLOR";
         };
-        momentary_layer_rgb: momentary_layer_rgb {
-            compatible = "zmk,behavior-macro";
-            label = "MOMENTARY_LAYER_RGB";
-            #binding-cells = <0>;
-
-            bindings = <
-                &mo 1
-                &rgb_ug RGB_COLOR_HSB(302,255,180)
-            >;
-            bindings-release = <
-                &home_color
-            >;
-        };
     };
 
     macros {
