@@ -18,14 +18,18 @@
             compatible = "zmk,behavior-macro";
             label = "LAYER_RGB_TOG";
             #binding-cells = <0>;
-            bindings = <&tog 1 &rgb_ug RGB_COLOR_HSB(183,94,51)>;
+            bindings =
+                <&macro_tap>,
+                <&tog 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(183,94,51)>;
         };
 
         goback: goback {
             compatible = "zmk,behavior-macro";
             label = "GOBACK";
             #binding-cells = <0>;
-            bindings = <&tog 1 &home_color>;
+            bindings = <&macro_tap>, <&tog 1>, <&macro_tap>, <&home_color>;
         };
 
         home_color: home_color {
